@@ -1,0 +1,27 @@
+{
+  "name": "forkify",
+  "version": "1.0.0",
+  "description": "recipe searching app",
+  "main": "index.js",
+  "scripts": {
+    "webpack" : "webpack", 
+    "dev": "webpack",
+    "build": "webpack -- --mode production"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ANgajasinghe/Forkify.git"
+  },
+  "author": "ANGajasinghe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ANgajasinghe/Forkify/issues"
+  },
+  "homepage": "https://github.com/ANgajasinghe/Forkify#readme",
+  "devDependencies": {
+    "webpack": "^4.43.0"
+  },
+  "dependencies": {
+    "webpack-cli": "^3.3.11"
+  }
+}
