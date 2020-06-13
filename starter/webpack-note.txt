@@ -1,0 +1,47 @@
+html-webpack-plugin
+
+    The HtmlWebpackPlugin simplifies creation of HTML 
+    files to serve your webpack bundles. This is especially useful 
+    for webpack bundles that include a hash in the filename which changes
+     every compilation. You can either let the plugin generate an HTML file for you,
+    supply your own template using lodash templates, or use your own loader.
+
+Installation
+    npm install --save-dev html-webpack-plugin
+
+Basic Usage
+    const path = require('path');
+    const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+    module.exports = {
+    entry: './src/js/index.js',
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'js/bundle.js'
+    },
+    devServer: {
+        contentBase: './dist'
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+        filename: 'index.html',
+        template: './src/index.html'
+        })
+    ]
+    };
+
+//=========================
+webpack-dev-server
+
+    webpack-dev-server can be used to quickly develop an 
+    application. See the development guide to get started.
+
+    "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+    }
+
+To start web server :- npm run start
+
+Visit : https://webpack.js.org/concepts/
